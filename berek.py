@@ -7,7 +7,7 @@
 #6.feladat Hölgyek.txt-be a hölgyek és k dollárban
 #7.feladat BeszerzoHolgyek.txt -> Nev, belépidő, fizut$-ban
 
-f=open("berek.txt",encoding="utf-8")
+f=open("C:\\Users\\Csongor\\Desktop\\Egyebek\\Python\\agazat\\berek.txt",encoding="utf-8")
 fHolgyek=open("holgyek","w",encoding="utf-8")
 fHolgyek.write("Név,Részleg;Fizetés dollár\n")
 
@@ -17,7 +17,7 @@ fo,asztalosok, karbFo, karbFiz=0,0,0,0
 maxFiz=0
 maxDolg=[]
 ezerDollarnalTobb=0
-sor=f.readline()
+#sor=f.readline()
 for sor in f:
     fo+=1
     sor=sor.strip('\n').split(";")
